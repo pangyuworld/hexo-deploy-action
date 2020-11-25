@@ -61,7 +61,9 @@ git remote add origin "${REPOSITORY_PATH}"
 #===============================================
 git remote add coding "${CONDING_NET_PATH}"
 #===============================================
-
+echo "========================================"
+git remove -v
+echo "========================================"
 
 # Checks to see if the remote exists prior to deploying.
 # If the branch doesn't exist it gets created here as an orphan.
