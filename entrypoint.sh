@@ -59,7 +59,7 @@ git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git remote add origin "${REPOSITORY_PATH}"
 #===============================================
-git remote add origin "${CONDING_NET_PATH}"
+git remote add coding "${CONDING_NET_PATH}"
 #===============================================
 
 
@@ -80,5 +80,6 @@ git commit --allow-empty -m "Deploying to ${BRANCH}"
 
 echo 'Start Push'
 git push origin "${BRANCH}" --force
+git push coding "${BRANCH}" --force
 
 echo "Deployment succesful!"
